@@ -1,0 +1,205 @@
+body {
+    height: 190vh;
+    border: 8px solid #00C6AD;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fa-plane{
+    font-size: 40px;
+    animation: move 10s ease-in-out forwards;
+}
+
+.header {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.header-title {
+    font-weight: 600;
+}
+.fa-x {
+    position: relative;
+    right:250px
+}
+
+.main {
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.main-imgbox {
+    height: 300px;
+    width: 300px;
+    border: 6px solid black;
+    border-radius: 30px;
+    background: linear-gradient( to right bottom, pink, blue );
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.fa-image{
+    color:black;
+    font-size: 106px;
+}
+
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-music{
+    font-size: 80px;
+    font-weight: 1000;
+}
+
+.bottom{
+    position: relative;
+    left:-70px;
+}
+
+.main-name {
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    box-sizing: border-box;
+}
+
+
+.bar-play{
+    height: 100px;
+    width: 260px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -100px;
+    font-size: 30px;
+    color:red;
+    box-shadow: 0 10px 3px 0 black;
+}
+
+.fa-play {
+    margin-right: 20px;
+}
+
+.bar-heart{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:pink;
+    box-shadow: 0 10px 3px 0 black;
+}
+
+@keyframes beat {
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: scale(1.4);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.fa-heart {
+    will-change: transform;
+    animation: beat 2s ease-in-out infinite;
+}
+.bar-plus {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+    right: -80px;
+    box-shadow: 0 10px 3px 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width:100vw;
+    align-items: center;
+}
+
+.list-element {
+    display: flex;
+    margin-bottom:30px;
+    width:400px;
+    box-sizing: border-box;
+    position: relative;
+    left:-160px;
+}
+
+.list__box {
+    height: 60px;
+    width: 60px;
+    border:3px solid black;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.list-singer{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.title{
+   font-size: 25px;
+   font-weight: 900;
+   margin-bottom: 10px;
+}
+
+.singer{
+   opacity: 0.8;
+}
+
+.red{
+    background: linear-gradient( to right bottom, rgb(150, 203, 169), red);
+}
+
+.pink {
+    background: linear-gradient( to right bottom, purple, pink);
+}
+
+.blue {
+    background: linear-gradient( to right bottom, white, blue);
+}
+
+.teal {
+    background: linear-gradient( to right bottom, yellow, teal);
+}
+
